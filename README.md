@@ -45,7 +45,6 @@ searchlogger/
 ├── services/
 │   ├── __init__.py
 │   ├── search_logger.py
-│   ├── ai_search_engine.py
 │   └── analytics.py
 ├── api/
 │   ├── __init__.py
