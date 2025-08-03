@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```bash
 searchlogger/
 ├── requirements.txt
-├── .env.example
+├── .env
 ├── README.md
 ├── config/
 │   ├── __init__.py
