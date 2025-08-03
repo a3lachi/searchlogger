@@ -24,3 +24,35 @@ SearchLogger is a simple and efficient logging system for tracking search querie
 git clone https://github.com/a3lachi/searchlogger.git
 cd searchlogger
 pip install -r requirements.txt
+```
+
+## 🏗️ Project Structure
+```bash
+ai_search_logger/
+├── requirements.txt
+├── .env.example
+├── README.md
+├── config/
+│   ├── __init__.py
+│   └── database.py
+├── models/
+│   ├── __init__.py
+│   └── search_log.py
+├── database/
+│   ├── __init__.py
+│   ├── manager.py
+│   └── schema.sql
+├── services/
+│   ├── __init__.py
+│   ├── search_logger.py
+│   ├── ai_search_engine.py
+│   └── analytics.py
+├── api/
+│   ├── __init__.py
+│   ├── app.py
+│   └── routes.py
+├── utils/
+│   ├── __init__.py
+│   └── logger.py
+└── main.py
+```
