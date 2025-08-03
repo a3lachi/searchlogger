@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ## 🏗️ Project Structure
 ```bash
-ai_search_logger/
+searchlogger/
 ├── requirements.txt
 ├── .env.example
 ├── README.md
