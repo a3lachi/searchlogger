@@ -16,5 +16,4 @@ class DatabaseConfig :
 
     def get_connection_string(self) -> str:
         """Needed to connect to PostgreSQL via psycopg2 library"""
-
         return (f"host={self.host} port={self.port} dbname={self.database} user={self.user} password={self.password}")
