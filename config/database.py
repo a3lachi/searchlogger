@@ -14,6 +14,12 @@ class DatabaseConfig :
             print(f"The .env file is not set correctly, configuration error: {e}")
             print("Create an .env file and include your database informations")
 
-    def get_connection_string(self) -> str:
+    def get_connection_params(self) -> dict:
         """Needed to connect to PostgreSQL via psycopg2 library"""
-        return (f"host={self.host} port={self.port} dbname={self.database} user={self.user} password={self.password}")
+        return {
+            'host': self.host,
+            'port': self.port,
+            'database': self.database,
+            'user': self.user,
+            'password': self.password,
+        }
