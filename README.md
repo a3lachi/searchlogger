@@ -19,11 +19,14 @@ SearchLogger is a simple and efficient logging system for tracking search querie
  - PostgreSQL
 
 
-## 📦 Installation
+## 📦 Setup Instructions
 ```bash
 git clone https://github.com/a3lachi/searchlogger.git
 cd searchlogger
 pip install -r requirements.txt
+cp .env.example .env # Edit .env with your database credentials
+psql -d yourdb -f database/schema.sql
+python main.py
 ```
 
 ## 🏗️ Project Structure
