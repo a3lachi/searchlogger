@@ -54,12 +54,8 @@ class DatabaseManager:
         try:
             with self.get_cursor() as cursor:
                 cursor.execute(query, params)
-                
-                if query.strip().upper().startswith('SELECT'):
-                    results = cursor.fetchall()
-                    return [dict(row) for row in results] if results else []
-                else:
-                    return cursor.rowcount
+                results = cursor.fetchall()
+                return [dict(row) for row in results] if results else []
                     
         except psycopg2.Error as e:
             logger.error(f"Query '{query}' execution failed: {e}")

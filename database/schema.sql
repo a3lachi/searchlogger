@@ -1,7 +1,7 @@
 -- Create search_logs table
 CREATE TABLE IF NOT EXISTS search_logs (
     id BIGSERIAL PRIMARY KEY,
-    user_id UUID NOT NULL,
+    user_id INTEGER NOT NULL,
     search_query TEXT NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     search_results JSONB,

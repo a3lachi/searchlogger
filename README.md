@@ -25,7 +25,7 @@ git clone https://github.com/a3lachi/searchlogger.git
 cd searchlogger
 pip install -r requirements.txt
 cp .env.example .env # Edit .env with your database credentials
-psql -d yourdb -f database/schema.sql
+psql -d searchdb -f database/schema.sql
 python main.py
 ```
 
